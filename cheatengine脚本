@@ -1,0 +1,23 @@
+globalalloc(healthAddy,4)  //定义全局变量
+
+healthAddy:
+  dd 0 
+
+code:
+  mov [healthAddy],edi //此时edi的值被存入[healthAddy]
+
+
+
+
+
+unregistersymbol(healthAddy)
+dealloc(healthAddy)
+
+
+
+
+
+
+add address manully
+
+[healthAddy]+60     指针
